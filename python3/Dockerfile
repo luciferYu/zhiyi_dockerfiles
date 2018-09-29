@@ -1,4 +1,4 @@
-FROM zhiyi_dockerfiles/base
+FROM lucifery/centos7_base
 
 MAINTAINER 81784779@qq.com
 
