@@ -10,7 +10,7 @@ RUN yum install -y openssh-server vim net-tools wget rsync kde-l10n-Chinese libs
 
  # install setuptools
 RUN cd /usr/local/src \
-  && wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz \
+  && wget https://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz \
   && tar -xzvf setuptools-0.6c11.tar.gz \
   && cd setuptools-0.6c11 \
   && python setup.py build \
