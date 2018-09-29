@@ -9,12 +9,7 @@ RUN yum install -y openssh-server vim net-tools wget rsync kde-l10n-Chinese libs
   && rm -rf /var/cache/yum/x86_64/7/*
 
  # install setuptools
-RUN cd /usr/local/src \
-  && wget https://pypi.python.org/packages/45/a0/317c6422b26c12fe0161e936fc35f36552069ba8e6f7ecbd99bbffe32a5f/meld3-1.0.2.tar.gz#md5=3ccc78cd79cffd63a751ad7684c02c91 \
-  && tar zxvf meld3-1.0.2.tar.gz \
-  && cd meld3-1.0.2 \
-  && python setup.py install \
-  && rm -rf /usr/local/src/meld3-1.0.2*
+
 
 RUN cd /usr/local/src \
   && wget https://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz \
@@ -23,6 +18,13 @@ RUN cd /usr/local/src \
   && python setup.py build \
   && python setup.py install \
   && rm -rf /usr/local/src/setuptools-0.6*
+
+RUN cd /usr/local/src \
+  && wget https://pypi.python.org/packages/45/a0/317c6422b26c12fe0161e936fc35f36552069ba8e6f7ecbd99bbffe32a5f/meld3-1.0.2.tar.gz#md5=3ccc78cd79cffd63a751ad7684c02c91 \
+  && tar zxvf meld3-1.0.2.tar.gz \
+  && cd meld3-1.0.2 \
+  && python setup.py install \
+  && rm -rf /usr/local/src/meld3-1.0.2*
 
 # install supervisor
 RUN cd /usr/local/src \
