@@ -3,7 +3,7 @@ FROM centos:7
 MAINTAINER 81784779@qq.com
 
 #yum install
-RUN yum install -y kde-l10n-Chinese libselinux-python openssl openssl-devel\
+RUN yum install -y openssh-server rsync kde-l10n-Chinese libselinux-python openssl openssl-devel\
   && yum -y reinstall glibc-common \
   && yum clean all \
   && rm -rf /var/cache/yum/x86_64/7/*
