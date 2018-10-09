@@ -1,4 +1,4 @@
-FROM alpine:3.8.1
+FROM alpine:3.8
 
 MAINTAINER 81784779@qq.com
 
