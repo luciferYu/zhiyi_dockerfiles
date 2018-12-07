@@ -2,7 +2,7 @@ FROM lucifery/centos7_base
 
 MAINTAINER 81784779@qq.com
 
-RUN  yum install -y git openssl-devel python-devel gcc gcc-c++ libtool make mysql-devel MYSQL-python \
+RUN  yum install -y git openssl-devel python-devel gcc gcc-c++ libtool make mysql-devel MYSQL-python  sqlite-devel \
   && yum clean all \
   && rm -rf /var/cache/yum/x86_64/7/*
 
