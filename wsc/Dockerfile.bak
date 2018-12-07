@@ -7,8 +7,8 @@ RUN mkdir -p /data/web/WochuServerCenter/log/error /data/web/WochuServerCenter/l
 
 ADD WochuServerCenter /data/web/WochuServerCenter
 
-RUN pip3 install -r /data/web/WochuServerCenter/requirements.txt
-
 ADD uwsgi.ini /data/web/WochuServerCenter/uwsgi.ini
+
+RUN pip3 install -r /data/web/WochuServerCenter/requirements.txt
 
 CMD ["/usr/local/python-3.6/bin/uwsgi","--ini","/data/web/WochuServerCenter/uwsgi.ini"]
