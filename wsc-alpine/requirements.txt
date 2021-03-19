@@ -15,7 +15,7 @@ django-redis-sessions==0.6.1
 django-rest-framework-docs==0.1.7
 django-rest-swagger==2.1.0
 django-silk==3.0.1
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 djangorestframework-jwt==1.11.0
 drf-dynamic-fields==0.3.0
 gprof2dot==2016.10.13
